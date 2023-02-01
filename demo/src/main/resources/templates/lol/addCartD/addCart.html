@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:form="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить карту</title>
+</head>
+<body>
+
+<form method="POST" action="/NoVerified/setCartRez" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td><form:label path="file">Добавить карту:</form:label></td>
+            <td><input type="file" name="file" multiple accept="image/*,image/jpeg"/></td>
+        </tr>
+        <tr>
+            <td>Сезон: </td>
+            <td><input type="text" name="sezon" value=""/></td>
+            <td> (зима или лето)</td>
+        </tr>
+
+        <tr>
+            <td>Масштаб 1: </td>
+            <td><input type="text" name="mashtab" /></td>
+        </tr>
+
+        <tr>
+            <td>Сечение рельефа: </td>
+            <td><input type="text" name="relef" /></td>
+            <td>м</td>
+        </tr>
+
+        <tr>
+            <td>Местность: </td>
+            <td><input type="text" name="mesto" /></td>
+        </tr>
+
+        <tr>
+            <td>Группа: </td>
+            <td><input type="text" name="group" /></td>
+            <td> (формат М21 Ж21)</td>
+        </tr>
+
+        <tr>
+            <td>Вид: </td>
+            <td><input type="text" name="vid" /></td>
+            <td> (только лонг, классика и спринт, рогейн, эстафета, выбор. внимательно на синтаксис)</td>
+        </tr>
+
+        <tr>
+            <td>Год: </td>
+            <td><input type="text" name="god" /></td>
+            <td> (год карты)</td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" value="Загрузитькарту карту" /></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

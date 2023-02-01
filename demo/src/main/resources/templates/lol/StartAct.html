@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Проверка карт</title>
+</head>
+<body>
+
+<IMG th:SRC="${provCart}">
+
+
+<form method="POST" action="/NoVerified/getCartRezoutT" enctype="multipart/form-data">
+<table>
+
+    <tr>
+        <td>Сезон: </td>
+        <td><input type="text" name="sezon" th:value="${provSezon}" /></td>
+        <td> (зима или лето)</td>
+    </tr>
+
+    <tr>
+        <td>Масштаб 1: </td>
+        <td><input type="text" name="mashtab" th:value="${provMashtab}"/></td>
+    </tr>
+
+    <tr>
+        <td>Сечение рельефа: </td>
+        <td><input type="text" name="relef" th:value="${provRelef}"/></td>
+        <td>м</td>
+    </tr>
+
+    <tr>
+        <td>Местность: </td>
+        <td><input type="text" name="mesto" th:value="${provMesto}"/></td>
+    </tr>
+
+    <tr>
+        <td>Группа: </td>
+        <td><input type="text" name="group" th:value="${provGroup}"/></td>
+        <td> (формат М21 Ж21)</td>
+    </tr>
+
+    <tr>
+        <td>Вид: </td>
+        <td><input type="text" name="vid" th:value="${provVid}"/></td>
+        <td> (только лонг, классика и спринт, рогейн, эстафета, выбор. внимательно на синтаксис)</td>
+    </tr>
+
+    <tr>
+        <td>Год: </td>
+        <td><input type="text" name="god" th:value="${provGod}"/></td>
+        <td> (год карты)</td>
+    </tr>
+
+    <tr>
+        <td><input type="submit" value="Загрузитькарту карту" /></td>
+    </tr>
+
+    <tr>
+        <td><input type="submit" value="Удалить" formaction="/NoVerified/getCartRezoutF"/> </td>
+    </tr>
+        </table>
+    </form>
+    </body>
+</html>

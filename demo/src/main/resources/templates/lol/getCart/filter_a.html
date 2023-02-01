@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Смотреть карты</title>
+</head>
+<body>
+<P>Фильтры:</P>
+<form method="POST" action="/Verified/getCart">
+    <table>
+        <tr>
+            <td>Сезон: </td>
+            <td><input type="text" name="sezon" value="лето"/></td>
+            <td> (зима или лето)</td>
+        </tr>
+
+        <tr>
+            <td>Масштаб 1: </td>
+            <td><input type="text" value="0" name="mashtab" /></td>
+        </tr>
+
+        <tr>
+            <td>Сечение рельефа: </td>
+            <td><input type="text" value="0" name="relef" /></td>
+            <td>м</td>
+        </tr>
+
+        <tr>
+            <td>Местность: </td>
+            <td><input type="text" value="0" name="mesto" /></td>
+        </tr>
+
+        <tr>
+            <td>Группа: </td>
+            <td><input type="text" value="0" name="group" /></td>
+            <td> (формат М21 Ж21)</td>
+        </tr>
+
+        <tr>
+            <td>Вид: </td>
+            <td><input type="text" value="0" name="vid" /></td>
+            <td> (только лонг, классика и спринт, рогейн, эстафета, выбор. внимательно на синтаксис)</td>
+        </tr>
+
+        <tr>
+            <td>Год: </td>
+            <td><input type="text" value="0" name="god" /></td>
+            <td> (год карты)</td>
+        </tr>
+
+        <tr>
+            <td><input type="submit" value="Применить фильтры" /></td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>
