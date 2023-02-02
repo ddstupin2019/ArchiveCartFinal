@@ -33,7 +33,7 @@ public class YndecsDiscSviz {
         DefaultHttpClient httpclient = new DefaultHttpClient();
         String url = "https://cloud-api.yandex.net/v1/disk/resources/download?path=arvive/1675087728816trenirovka_zm_23_01_23.jpg";
         HttpGet httpPost = new HttpGet(url);
-        httpPost.addHeader("Authorization", "OAuth y0_AgAAAABlGsYaAAkFfAAAAADabdTnvdX00MCsTg2mDMgckjSlSTz3QrU");
+        httpPost.addHeader("Authorization", "Ваш токен");
         try {
             HttpResponse response = httpclient.execute(httpPost);
             HttpEntity entity = response.getEntity();
@@ -62,7 +62,7 @@ public class YndecsDiscSviz {
         DefaultHttpClient httpclient = new DefaultHttpClient();
         String url = "https://cloud-api.yandex.net/v1/disk/resources/upload?path=/arvive/" + fileName;
         HttpGet httpPost = new HttpGet(url);
-        httpPost.addHeader("Authorization", "OAuth y0_AgAAAABlGsYaAAkFfAAAAADabdTnvdX00MCsTg2mDMgckjSlSTz3QrU");
+        httpPost.addHeader("Authorization", "Ваш токен");
 
         try {
             HttpResponse response = httpclient.execute(httpPost);
@@ -81,7 +81,7 @@ public class YndecsDiscSviz {
         DefaultHttpClient httpclient = new DefaultHttpClient();
         String url = "https://cloud-api.yandex.net/v1/disk/resources/download?path=arvive/"+fileName;
         HttpGet httpPost = new HttpGet(url);
-        httpPost.addHeader("Authorization", "OAuth y0_AgAAAABlGsYaAAkFfAAAAADabdTnvdX00MCsTg2mDMgckjSlSTz3QrU");
+        httpPost.addHeader("Authorization", "Ваш токен");
         try {
             HttpResponse response = httpclient.execute(httpPost);
             HttpEntity entity = response.getEntity();
